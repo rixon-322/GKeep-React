@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/GKeep-React/static/css/main.c3fcc072.css",
+    "main.js": "/GKeep-React/static/js/main.46bee349.js",
+    "static/js/787.a1874a3d.chunk.js": "/GKeep-React/static/js/787.a1874a3d.chunk.js",
+    "index.html": "/GKeep-React/index.html",
+    "main.c3fcc072.css.map": "/GKeep-React/static/css/main.c3fcc072.css.map",
+    "main.46bee349.js.map": "/GKeep-React/static/js/main.46bee349.js.map",
+    "787.a1874a3d.chunk.js.map": "/GKeep-React/static/js/787.a1874a3d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3fcc072.css",
+    "static/js/main.46bee349.js"
+  ]
+}
