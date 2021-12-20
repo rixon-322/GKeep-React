@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Header from './components/Header';
+import Addtextbox from './components/Addtextbox';
+import Notebox from './components/Notebox';
+import { useState } from 'react';
+
 function App() {
+  const [notes,setNote] = useState([])
+
+  function addNote(newNote){
+  setNote((preValue) => {
+    return [...preValue, newNote];
+  })
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <div> 
+      <Header/>
+      <Addtextbox onAdd={addNote}/>
+      {notes.map((note,index) => (
+        <Notebox
+        key={index}
+        id={index}
+        title={note.title}
+        content={note.content}
+        />
+      ))}
+     </div>
   );
 }
 
