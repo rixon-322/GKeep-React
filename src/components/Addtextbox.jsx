@@ -8,9 +8,9 @@ function Addtextbox({ onAdd}) {
 
     function handleChange(e) {
         const { name, value } = e.target;
-        setNote((preValue) => {
+        setNote((prevValue) => {
             return {
-                ...preValue,
+                ...prevValue,
                 [name]: value,
             }
         })

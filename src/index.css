@@ -82,10 +82,22 @@ form button{
 .note h1{
   font-size: 1rem;
   margin-bottom: 6px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 .note p{
   font-size: 1rem;
   margin-bottom: 10px;
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+.note button{
+  position: relative;
+  float: right;
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding-left: 20px;
+  padding-top: 5px;
 }
